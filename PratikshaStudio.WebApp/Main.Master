@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="PratikshaStudio.WebApp.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Marvel Movie Studio</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+        <h1>Marvel Movie Studio</h1>
+
+        <ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="SearchMovie.aspx">Search Movie</a></li>
+         <%--   <li><a href="Add a movie.aspx">Add a movie</a></li>--%>
+        </ul>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
